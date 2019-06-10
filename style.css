@@ -27,7 +27,7 @@
   #lezioni .row > .left, #lezioni .row > .right{
     width: 100%;
     float: none;
-
+    font-size: 2em;
   }
 }
 
@@ -46,7 +46,7 @@
   #steps .row > .left,#steps .row > .central, #steps .row > .right{
     width: 100%;
     float: none;
-
+    font-size: 2em;
   }
 }
 
@@ -68,6 +68,12 @@
   padding:30px
 }
 
+@media screen and (max-width:480px){
+  #why .row > .first, #why .row > .second, #why .row > .third{
+    width: 100%;
+    float: none;
+    font-size: 2em;
+}
 /* COMMON */
 
 [background="grey"]{
@@ -83,9 +89,15 @@ img{
 }
 .container{
   width: 1000px;
+  font-size: 15px;
 }
 .container::after{
   content:"";
   display:table;
   clear:both;
+}
+@media screen and (max-width:480px){
+  img{
+    height: 10em;
+  }
 }
